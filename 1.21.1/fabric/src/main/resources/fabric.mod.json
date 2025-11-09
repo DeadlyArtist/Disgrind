@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${version}",
+  "name": "${mod_name}",
+  "description": "${description}",
+  "authors": $mod_authors,
+  "contact": {
+    "homepage": "${homepage}",
+    "sources": "${source}",
+    "issues": "${issues}"
+  },
+  "license": "${license}",
+  "icon": "icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "disgrind.fabric.ModEntryFabric"
+    ],
+    "client": [
+      "disgrind.fabric.client.ClientModEntryFabric"
+    ]
+  },
+  "mixins": [
+    "disgrind.mixins.json",
+    "disgrind.fabric.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": $compatible_minecraft_versions,
+    "java": ">=${java_version}",
+    "balm-fabric": ">=${balm_version}"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

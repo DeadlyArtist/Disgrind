@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "package": "disgrind.mixin",
+  "plugin": "disgrind.MixinPlugin",
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8",
+  "client": [
+    "GrindstoneScreenMixin"
+  ],
+  "mixins": [
+    "GrindstoneScreenHandlerMixin",
+    "GrindstoneSlot1ClassMixin",
+    "GrindstoneSlot2ClassMixin",
+    "GrindstoneSlot3ClassMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
